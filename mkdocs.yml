@@ -1,0 +1,77 @@
+# Project information
+site_name: "Learn Python"
+site_description: "Learn Python for Data Sience and Data Engineering"
+site_author: "Aman Ranjan Verma"
+site_url: "https://arverma.github.io/learn-python-documentation/"
+
+# Repository
+#repo_name: ""
+#repo_url: ""
+
+# Copyright
+copyright: "Copyright &copy; 2022 Towards Data Engineering"
+
+# Configuration
+theme:
+  name: "material"
+  icon:
+    logo: material/library
+  features:
+    - content.tabs.link
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - search.suggest
+  language: "en"
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+
+extra_css:
+  - "stylesheets/extra.css"
+
+# Customization
+extra:
+  manifest: "manifest.webmanifest"
+  social:
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://medium.com/towards-data-engineering"
+  version:
+    provider: mike
+    default: stable
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+
+# Pages
+nav:
+  - Introduction: 'index.md'
+  - Architecture: 'architecture.md'
+  - Getting Started: 'gettingStarted.md'
+  - Offline Feature Store: 'offline.md'
+  - Online Feature Store: 'online.md'
+  - FAQs:
+    - Registry FAQ: 'faq/registryFaq.md'
+    - Offline Store FAQ: 'faq/offlineFaq.md'
+    - Online Store FAQ: 'faq/onlineFaq.md'
+  - Release Notes: 'releaseNotes.md'
